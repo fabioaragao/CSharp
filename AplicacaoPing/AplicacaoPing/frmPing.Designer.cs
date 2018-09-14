@@ -51,7 +51,7 @@
             this.gpHost.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gpHost.Name = "gpHost";
             this.gpHost.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.gpHost.Size = new System.Drawing.Size(315, 60);
+            this.gpHost.Size = new System.Drawing.Size(247, 60);
             this.gpHost.TabIndex = 0;
             this.gpHost.TabStop = false;
             this.gpHost.Text = "Digite o Host:";
@@ -61,8 +61,9 @@
             this.txtHost.Location = new System.Drawing.Point(7, 23);
             this.txtHost.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtHost.Name = "txtHost";
-            this.txtHost.Size = new System.Drawing.Size(300, 22);
+            this.txtHost.Size = new System.Drawing.Size(234, 22);
             this.txtHost.TabIndex = 0;
+            this.txtHost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // gbIP
             // 
@@ -72,7 +73,7 @@
             this.gbIP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gbIP.Name = "gbIP";
             this.gbIP.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.gbIP.Size = new System.Drawing.Size(315, 63);
+            this.gbIP.Size = new System.Drawing.Size(247, 63);
             this.gbIP.TabIndex = 1;
             this.gbIP.TabStop = false;
             this.gbIP.Text = "IP do Host ";
@@ -83,7 +84,7 @@
             this.txtIpHost.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtIpHost.Name = "txtIpHost";
             this.txtIpHost.ReadOnly = true;
-            this.txtIpHost.Size = new System.Drawing.Size(300, 22);
+            this.txtIpHost.Size = new System.Drawing.Size(234, 22);
             this.txtIpHost.TabIndex = 0;
             this.txtIpHost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -95,7 +96,7 @@
             this.gbStatus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gbStatus.Name = "gbStatus";
             this.gbStatus.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.gbStatus.Size = new System.Drawing.Size(315, 66);
+            this.gbStatus.Size = new System.Drawing.Size(247, 66);
             this.gbStatus.TabIndex = 2;
             this.gbStatus.TabStop = false;
             this.gbStatus.Text = "Status do Ping:";
@@ -106,7 +107,7 @@
             this.txtStatus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtStatus.Name = "txtStatus";
             this.txtStatus.ReadOnly = true;
-            this.txtStatus.Size = new System.Drawing.Size(300, 22);
+            this.txtStatus.Size = new System.Drawing.Size(234, 22);
             this.txtStatus.TabIndex = 0;
             this.txtStatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -116,7 +117,7 @@
             this.btnPing.Location = new System.Drawing.Point(14, 254);
             this.btnPing.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnPing.Name = "btnPing";
-            this.btnPing.Size = new System.Drawing.Size(87, 37);
+            this.btnPing.Size = new System.Drawing.Size(57, 26);
             this.btnPing.TabIndex = 3;
             this.btnPing.Text = "Ping";
             this.btnPing.UseVisualStyleBackColor = true;
@@ -125,10 +126,10 @@
             // btnLimpar
             // 
             this.btnLimpar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpar.Location = new System.Drawing.Point(128, 254);
+            this.btnLimpar.Location = new System.Drawing.Point(108, 254);
             this.btnLimpar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(87, 37);
+            this.btnLimpar.Size = new System.Drawing.Size(57, 26);
             this.btnLimpar.TabIndex = 4;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
@@ -137,10 +138,10 @@
             // btnFechar
             // 
             this.btnFechar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFechar.Location = new System.Drawing.Point(240, 254);
+            this.btnFechar.Location = new System.Drawing.Point(204, 254);
             this.btnFechar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(87, 37);
+            this.btnFechar.Size = new System.Drawing.Size(57, 26);
             this.btnFechar.TabIndex = 5;
             this.btnFechar.Text = "Fechar";
             this.btnFechar.UseVisualStyleBackColor = true;
@@ -159,7 +160,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(342, 318);
+            this.ClientSize = new System.Drawing.Size(276, 318);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.btnLimpar);
