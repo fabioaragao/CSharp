@@ -34,9 +34,9 @@
             this.txtIpHost = new System.Windows.Forms.TextBox();
             this.gbStatus = new System.Windows.Forms.GroupBox();
             this.txtStatus = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnPing = new System.Windows.Forms.Button();
+            this.btnLimpar = new System.Windows.Forms.Button();
+            this.btnFechar = new System.Windows.Forms.Button();
             this.gpHost.SuspendLayout();
             this.gbIP.SuspendLayout();
             this.gbStatus.SuspendLayout();
@@ -78,10 +78,10 @@
             // 
             // txtIpHost
             // 
-            this.txtIpHost.Enabled = false;
             this.txtIpHost.Location = new System.Drawing.Point(7, 23);
             this.txtIpHost.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtIpHost.Name = "txtIpHost";
+            this.txtIpHost.ReadOnly = true;
             this.txtIpHost.Size = new System.Drawing.Size(300, 22);
             this.txtIpHost.TabIndex = 0;
             this.txtIpHost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -101,55 +101,58 @@
             // 
             // txtStatus
             // 
-            this.txtStatus.Enabled = false;
             this.txtStatus.Location = new System.Drawing.Point(7, 23);
             this.txtStatus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtStatus.Name = "txtStatus";
+            this.txtStatus.ReadOnly = true;
             this.txtStatus.Size = new System.Drawing.Size(300, 22);
             this.txtStatus.TabIndex = 0;
             this.txtStatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button1
+            // btnPing
             // 
-            this.button1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(14, 254);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 37);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Ping";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnPing.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPing.Location = new System.Drawing.Point(14, 254);
+            this.btnPing.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnPing.Name = "btnPing";
+            this.btnPing.Size = new System.Drawing.Size(87, 37);
+            this.btnPing.TabIndex = 3;
+            this.btnPing.Text = "Ping";
+            this.btnPing.UseVisualStyleBackColor = true;
+            this.btnPing.Click += new System.EventHandler(this.btnPing_Click);
             // 
-            // button2
+            // btnLimpar
             // 
-            this.button2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(128, 254);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(87, 37);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Limpar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnLimpar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpar.Location = new System.Drawing.Point(128, 254);
+            this.btnLimpar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(87, 37);
+            this.btnLimpar.TabIndex = 4;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
-            // button3
+            // btnFechar
             // 
-            this.button3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(240, 254);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(87, 37);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Fechar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnFechar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFechar.Location = new System.Drawing.Point(240, 254);
+            this.btnFechar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(87, 37);
+            this.btnFechar.TabIndex = 5;
+            this.btnFechar.Text = "Fechar";
+            this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // frmPing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(342, 318);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnFechar);
+            this.Controls.Add(this.btnLimpar);
+            this.Controls.Add(this.btnPing);
             this.Controls.Add(this.gbStatus);
             this.Controls.Add(this.gbIP);
             this.Controls.Add(this.gpHost);
@@ -178,9 +181,9 @@
         private System.Windows.Forms.TextBox txtIpHost;
         private System.Windows.Forms.GroupBox gbStatus;
         private System.Windows.Forms.TextBox txtStatus;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnPing;
+        private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.Button btnFechar;
     }
 }
 
