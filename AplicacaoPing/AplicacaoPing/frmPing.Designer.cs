@@ -37,6 +37,7 @@
             this.btnPing = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.gpHost.SuspendLayout();
             this.gbIP.SuspendLayout();
             this.gbStatus.SuspendLayout();
@@ -145,11 +146,21 @@
             this.btnFechar.UseVisualStyleBackColor = true;
             this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(11, 295);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(188, 16);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Desenvolvido por: Fábio Aragão";
+            // 
             // frmPing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(342, 318);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnPing);
@@ -170,6 +181,7 @@
             this.gbStatus.ResumeLayout(false);
             this.gbStatus.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -184,6 +196,7 @@
         private System.Windows.Forms.Button btnPing;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnFechar;
+        private System.Windows.Forms.Label label1;
     }
 }
 
