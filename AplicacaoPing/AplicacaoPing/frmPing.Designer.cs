@@ -96,7 +96,7 @@
             this.gbStatus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gbStatus.Name = "gbStatus";
             this.gbStatus.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.gbStatus.Size = new System.Drawing.Size(247, 66);
+            this.gbStatus.Size = new System.Drawing.Size(247, 61);
             this.gbStatus.TabIndex = 2;
             this.gbStatus.TabStop = false;
             this.gbStatus.Text = "Status do Ping:";
@@ -105,16 +105,17 @@
             // 
             this.txtStatus.Location = new System.Drawing.Point(7, 23);
             this.txtStatus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtStatus.Multiline = true;
             this.txtStatus.Name = "txtStatus";
             this.txtStatus.ReadOnly = true;
-            this.txtStatus.Size = new System.Drawing.Size(234, 22);
+            this.txtStatus.Size = new System.Drawing.Size(234, 27);
             this.txtStatus.TabIndex = 0;
             this.txtStatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnPing
             // 
             this.btnPing.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPing.Location = new System.Drawing.Point(14, 254);
+            this.btnPing.Location = new System.Drawing.Point(14, 252);
             this.btnPing.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnPing.Name = "btnPing";
             this.btnPing.Size = new System.Drawing.Size(57, 26);
@@ -126,7 +127,7 @@
             // btnLimpar
             // 
             this.btnLimpar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpar.Location = new System.Drawing.Point(108, 254);
+            this.btnLimpar.Location = new System.Drawing.Point(108, 252);
             this.btnLimpar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(57, 26);
@@ -138,7 +139,7 @@
             // btnFechar
             // 
             this.btnFechar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFechar.Location = new System.Drawing.Point(204, 254);
+            this.btnFechar.Location = new System.Drawing.Point(204, 252);
             this.btnFechar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(57, 26);
@@ -150,7 +151,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 295);
+            this.label1.Location = new System.Drawing.Point(11, 293);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(188, 16);
             this.label1.TabIndex = 6;
@@ -160,7 +161,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(276, 318);
+            this.ClientSize = new System.Drawing.Size(277, 318);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.btnLimpar);
